@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import profile from "img/profile.jpg"
 import CvIcon from "../assests/cv.inline.svg"
 import SvgData from "../components/svg-data"
 import {
@@ -31,7 +30,7 @@ export default function About() {
             <div className="Tilt-inner ">
               <img
                 className="img-avatar db mw-100 center-m center-l  br-100"
-                src={profile}
+                src="img/profile.jpg"
                 alt="avatar"
               />
             </div>
