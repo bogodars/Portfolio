@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import profile from "/img/profile.jpg"
+import profile from "img/profile.jpg"
 import CvIcon from "../assests/cv.inline.svg"
 import SvgData from "../components/svg-data"
 import {
