@@ -17,6 +17,7 @@ function contact() {
             netlify-honeypot="bot-field"
             data-netlify="true"
             name="contact"
+            data-netlify-recaptcha="true"
             className="form contact-form "
           >
             <label className="label__name">
