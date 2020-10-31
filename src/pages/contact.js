@@ -14,6 +14,7 @@ function contact() {
           </h5>
           <form
             method="POST"
+            netlify-honeypot="bot-field"
             data-netlify="true"
             name="contact"
             className="form contact-form "
