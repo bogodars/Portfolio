@@ -1,18 +1,8 @@
-const Adventure = require("../img/Adventure.png")
-const Travelix = require("../img/Travelix.png")
-const MoGo = require("../img/Mogo.png")
-const Roza = require("../img/Rosa.png")
-const Mybrary = require("../img/Mybrary.png")
-const Skinali = require("../img/Skinali.png")
-const smartBrain = require("../img/smart-brain.png")
-const Expensify = require("../img/Expensify.png")
-const currencyConverter = require("../img/Currency-Converter.png")
-
 export const projectItems = [
   {
     name: "Adventure",
     title: "Adventure website",
-    image: Adventure,
+    image: "img/Adventure.png",
     exerpt: `Responsive website template`,
     git: `https://github.com/bogodars/Adventure`,
     url: `https://bogodars.github.io/Adventure/index.html`,
@@ -22,7 +12,7 @@ export const projectItems = [
   {
     name: "Travelix",
     title: "Travelix",
-    image: Travelix,
+    image: "img/Travelix.png",
     exerpt: `Responsive website for hotels search and booking`,
     git: `https://github.com/bogodars/Travelix`,
     url: `https://bogodars.github.io/Travelix/`,
@@ -32,7 +22,7 @@ export const projectItems = [
   {
     name: "MoGo",
     title: "MoGo",
-    image: MoGo,
+    image: "img/Mogo.png",
     exerpt: `Responsive website Creative digital agency`,
     git: `https://github.com/bogodars/MoGo`,
     url: `https://bogodars.github.io/MoGo/`,
@@ -42,7 +32,7 @@ export const projectItems = [
   {
     name: "The Roza",
     title: "The Roza ",
-    image: Roza,
+    image: "img/Rosa.png",
     exerpt: `Responsive website for restaurant menu template`,
     git: `https://github.com/bogodars/Roza`,
     url: `https://bogodars.github.io/Roza/`,
@@ -52,7 +42,7 @@ export const projectItems = [
   {
     name: "Skinali",
     title: "Skinali ",
-    image: Skinali,
+    image: "img/Skinali.png",
     exerpt: `Responsive website for small business order`,
     git: `https://github.com/bogodars/Roza`,
     url: `https://bogodars.github.io/Roza/`,
@@ -62,7 +52,7 @@ export const projectItems = [
   {
     name: "Mybrary",
     title: "Mybrary",
-    image: Mybrary,
+    image: "img/Mybrary.png",
     exerpt: `Web app that use MVC folder structure, Node + Express + MongoDb on Back-end. `,
     git: `https://github.com/bogodars/MoGo`,
     url: `https://bogodars.github.io/MoGo/`,
@@ -72,7 +62,7 @@ export const projectItems = [
   {
     name: "Expensify",
     title: "Expensify",
-    image: Expensify,
+    image: "img/Expensify.png",
     exerpt: `Web app with node and firebase on Backe-end and React and Redux on Front-end `,
     git: `https://github.com/bogodars/expensify-app`,
     url: `https://rocky-basin-83545.herokuapp.com/`,
@@ -82,7 +72,7 @@ export const projectItems = [
   {
     name: "smartBrain",
     title: "smartBrain",
-    image: smartBrain,
+    image: "img/smart-brain.png",
     exerpt: `Full Stack Web app with  AI API that detects face on the uploaded picture `,
     git: `https://github.com/bogodars/expensify-app`,
     url: `https://rocky-basin-83545.herokuapp.com/`,
@@ -92,7 +82,7 @@ export const projectItems = [
   {
     name: "Currency Converter",
     title: "Currency Converter",
-    image: currencyConverter,
+    image: "img/Currency-Converter.png",
     exerpt: `Web app that can convert currency `,
     git: `https://github.com/bogodars/Currency-Converter`,
     url: `https://bogodars.github.io/Currency-Converter/`,
