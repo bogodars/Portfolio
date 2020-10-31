@@ -1,0 +1,317 @@
+/* General */
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Header */
+.logo {
+  font-family: "Rock Salt", cursive;
+}
+
+/* Header navmenu */
+.btn-nav,
+.button-avatar {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.btn-tog {
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  background-color: transparent;
+  color: black;
+  border: black 1px solid;
+  display: none;
+}
+
+/* Hero */
+/* .hero {
+  height: 100%;
+} */
+
+.hero__icon {
+  max-width: 400px;
+  width: 400px;
+  display: block;
+}
+
+/*Styled-components - Work */
+.overlay {
+  position: absolute;
+  top: 0;
+  color: white;
+  opacity: 0;
+  background-color: rgb(25, 169, 116);
+  width: 100%;
+  height: 72%;
+  transition: 0.5s ease;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.25);
+}
+
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.app {
+  position: absolute;
+  top: 96px;
+  right: 16px;
+  z-index: 1;
+}
+
+.danger {
+  top: 142px;
+  right: 0px;
+}
+
+/* About section*/
+
+/* Contact */
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+textarea::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  color: grey;
+}
+
+.submit {
+  float: right;
+}
+
+.contact-form {
+  width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  max-width: 500px;
+  margin-bottom: 100px;
+}
+
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  outline: none;
+  border-bottom: 1px solid;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.email__input,
+.name__input {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.subject__input,
+.message__textarea {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.message__textarea {
+  font-size: 1rem;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+.input:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #95e1d3;
+}
+
+.name__input:focus::-webkit-input-placeholder,
+.email__input:focus::-webkit-input-placeholder,
+.subject__input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #92d2a5;
+}
+
+textarea {
+  resize: none;
+}
+
+.category__list:last-child {
+  margin: 0;
+}
+
+.blog-a {
+  transition: none !important;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 960px) {
+  .button-avatar {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .hero-info,
+  .hero__icon {
+    margin: 0 auto;
+  }
+
+  .img-avatar {
+    margin: 0 auto;
+  }
+
+  .Card__box {
+    width: 100%;
+  }
+
+  .hero__icon {
+    width: 250px;
+  }
+
+  .btn-tog {
+    display: none;
+  }
+}
+
+.sun {
+  position: relative;
+  top: 1px;
+}
+
+.current {
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .img-avatar {
+    margin: 0 auto;
+
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+  .about-text {
+    margin-left: initial;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .about__text {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-ul {
+    padding: 24px 36px 24px;
+    background-color: #28b682;
+    color: #fff;
+    height: auto;
+    clear: both;
+    width: auto;
+    right: -5px;
+    overflow: hidden;
+    transition: transform 0.2s ease-out;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: relative;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  .btn-tog {
+    display: block;
+  }
+
+  .hero__icon {
+    width: 250px;
+  }
+
+  .subtitle {
+    line-height: 0.5;
+  }
+  .category__list {
+    display: none;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .email__input,
+  .name__input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  .hero-info {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card__article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* mobile navigation
+   -------------------------------------------------------------------- */
+  .navigation {
+    width: 100%;
+  }
+
+  .contact__body {
+    flex-wrap: wrap;
+  }
+  h4 {
+    padding-top: 0;
+  }
+
+  .img-avatar {
+    margin: 0 auto;
+    display: block;
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+
+  .about-text {
+    margin-left: initial;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .button-avatar {
+    margin: 0 auto;
+  }
+}
