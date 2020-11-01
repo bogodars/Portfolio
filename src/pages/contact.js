@@ -13,16 +13,16 @@ function contact() {
             For any questions, suggestions, comments or/and invitations write me
           </h5>
           <form
-            name="contact-form"
-            method="POST"
-            data-netlify="true"
+            method="post"
             netlify-honeypot="bot-field"
+            data-netlify="true"
+            name="contact"
             className="form contact-form "
           >
             <label className="label__name">
               <input
                 placeholder="Name"
-                type="text"
+                type="hidden"
                 name="name-form"
                 id="name"
                 className="name__input"
@@ -31,7 +31,7 @@ function contact() {
             <label className="label__email ">
               <input
                 placeholder="Email"
-                type="email"
+                type="hidden"
                 name="email-form"
                 id="email"
                 className="email__input  "
@@ -40,7 +40,7 @@ function contact() {
             <label className="label__subject">
               <input
                 placeholder="Subject"
-                type="text"
+                type="hidden"
                 name="subject-form"
                 id="subject"
                 className="subject__input"
