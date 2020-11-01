@@ -36,7 +36,7 @@ export default function About() {
             </div>
           </Tilt>
           <a
-            href="./BOGODAR_SHMYGLYK_Resume.pdf"
+            href="BOGODAR_SHMYGLYK_Resume.pdf"
             target="_blank"
             className={`app h3 w3 ${isActive ? "" : "danger"}`}
           >
