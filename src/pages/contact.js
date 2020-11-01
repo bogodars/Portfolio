@@ -15,14 +15,14 @@ function contact() {
           <form
             method="post"
             netlify-honeypot="bot-field"
-            data-netlify="true"
+            netlify
             name="contact"
             className="form contact-form "
           >
             <label className="label__name">
               <input
                 placeholder="Name"
-                type="hidden"
+                type="text"
                 name="name-form"
                 id="name"
                 className="name__input"
@@ -31,7 +31,7 @@ function contact() {
             <label className="label__email ">
               <input
                 placeholder="Email"
-                type="hidden"
+                type="email"
                 name="email-form"
                 id="email"
                 className="email__input  "
@@ -40,7 +40,7 @@ function contact() {
             <label className="label__subject">
               <input
                 placeholder="Subject"
-                type="hidden"
+                type="text"
                 name="subject-form"
                 id="subject"
                 className="subject__input"
