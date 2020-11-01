@@ -4,7 +4,7 @@ import "../css/custom.css"
 
 function contact() {
   return (
-    <section id="contact" className="contact-body">
+    <section id="contact" className="contact-body vh-75">
       <h4 className="pt5-l pt0 pt5-m  p10 tc f3 ml3">Contact me</h4>
       <div className="contact__body flex justify-between mt5-l mt2 items-center flex-wrap-m ">
         <Icon style={{ width: "450px", height: "400px", margin: "0 auto" }} />
@@ -16,13 +16,14 @@ function contact() {
             name="contact-form"
             method="POST"
             data-netlify="true"
+            netlify-honeypot="bot-field"
             className="form contact-form "
           >
             <label className="label__name">
               <input
                 placeholder="Name"
                 type="text"
-                name="name"
+                name="name-form"
                 id="name"
                 className="name__input"
               />
@@ -31,7 +32,7 @@ function contact() {
               <input
                 placeholder="Email"
                 type="email"
-                name="email"
+                name="email-form"
                 id="email"
                 className="email__input  "
               />
@@ -40,9 +41,9 @@ function contact() {
               <input
                 placeholder="Subject"
                 type="text"
-                name="subject"
+                name="subject-form"
                 id="subject"
-                className="subject__input  "
+                className="subject__input"
               />
             </label>
             <label>
