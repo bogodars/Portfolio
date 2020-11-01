@@ -19,6 +19,7 @@ function contact() {
             name="contact"
             className="form contact-form "
           >
+            <input type="hidden" name="form-name" value="contact" />
             <label className="label__name">
               <input
                 placeholder="Name"
