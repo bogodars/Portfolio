@@ -13,11 +13,9 @@ function contact() {
             For any questions, suggestions, comments or/and invitations write me
           </h5>
           <form
+            name="contact-form"
             method="POST"
-            netlify-honeypot="bot-field"
             data-netlify="true"
-            name="contact"
-            data-netlify-recaptcha="true"
             className="form contact-form "
           >
             <label className="label__name">
