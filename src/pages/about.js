@@ -81,7 +81,7 @@ export default function About() {
             <h3>Interest</h3>
             <div className="blue f2 ">
               <a
-                href="https://www.npmjs.com/"
+                href="https://www.last.fm/user/turok87"
                 alt="last.fm"
                 target="_blank"
                 rel="noreferrer"
@@ -97,6 +97,9 @@ export default function About() {
               <FaBookReader
                 className="green mr3 grow pointer"
                 title="Reading"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.goodreads.com/user/show/78275917-bogodar-shmyglyk"
               />
               <FaGlobe className="gold grow pointer" title="Traveling" />
             </div>

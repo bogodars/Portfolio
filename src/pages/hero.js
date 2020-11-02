@@ -14,13 +14,10 @@ const HeadShakeDiv = styled.div`
 
 const Hero = () => {
   return (
-    <section id="hero">
-      <div
-        id="cold-pressed"
-        className="hero flex-wrap-reverse-m  items-center flex-m flex-l justify-between  vh-100 min-vh-100"
-      >
+    <section id="hero" className="relative">
+      <div className="hero flex-wrap-reverse-m  items-center flex-m flex-l justify-between  vh-100 min-vh-100">
         <div className="hero-info ">
-          <div id="#my-cool-header" className="center">
+          <div className="center">
             <div className=" subtitle">
               <h4 className="dib mb0">Hello</h4>
               <HeadShakeDiv className="dib db-l ">
