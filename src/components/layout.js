@@ -75,6 +75,7 @@ export default function Layout({ children }) {
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
         <link rel="shortcut icon" href={"/" + favicon} type="image/png" />
+        <link rel="alternative icon" href="/favicon.ico" type="image/png" />
       </Helmet>
 
       <ThemeContext.Consumer>
