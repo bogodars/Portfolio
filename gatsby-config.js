@@ -84,11 +84,6 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Nunito`,
-            variants: [`400`, `700`, `800`, `900`],
-            subsets: [`latin`],
-          },
-          {
             family: `Rock Salt`,
           },
         ],

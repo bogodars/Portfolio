@@ -66,14 +66,14 @@ export default function Layout({ children }) {
     <>
       <Helmet>
         <title>{title}</title>
+        <html lang="en" />
+        <meta charSet="utf-8" />
         <meta name="description" content={description} />
         <meta name="author" content={author.name} />
-
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
-
         <link rel="shortcut icon" href={"/" + favicon} type="image/png" />
       </Helmet>
 
