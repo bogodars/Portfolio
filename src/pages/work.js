@@ -32,7 +32,7 @@ function Work() {
   }, [filter])
   return (
     <div id="work">
-      <h4 className="pt0 pt5-m  tc f3 ml3">Projects</h4>
+      <h4 className="pt0 pt5-m  pt5-l tc f3 ml3">Projects</h4>
       <div className="App tc">
         <div className="portfolio__labels mb5 db">
           <Button

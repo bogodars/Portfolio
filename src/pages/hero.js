@@ -14,7 +14,7 @@ const HeadShakeDiv = styled.div`
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative">
+    <section id="home" className="relative">
       <div className="hero flex-wrap-reverse-m  items-center flex-m flex-l justify-between  vh-100 min-vh-100">
         <div className="hero-info ">
           <div className="center">

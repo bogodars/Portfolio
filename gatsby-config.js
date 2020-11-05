@@ -26,7 +26,7 @@ module.exports = {
 
     /* Configure the navigation menu */
     menuItems: [
-      { path: "hero", label: "Home" },
+      { path: "home", label: "Home" },
       { path: "about", label: "About" },
       { path: "work", label: "Work" },
       { path: "contact", label: "Contact" },

@@ -4,7 +4,7 @@ import "../css/custom.css"
 
 function contact() {
   return (
-    <section id="contact" className="contact-body vh-75">
+    <section id="contact" className="contact-body ">
       <h4 className="pt5-l pt0 pt5-m  p10 tc f3 ml3">Contact me</h4>
       <div className="contact__body flex justify-between mt5-l mt2 items-center flex-wrap-m ">
         <Icon style={{ width: "450px", height: "400px", margin: "0 auto" }} />

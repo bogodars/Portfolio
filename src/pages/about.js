@@ -19,7 +19,7 @@ export default function About() {
   return (
     <section id="about">
       {" "}
-      <h4 className="tc f3 pt0 pt5-m ">About</h4>
+      <h4 className="tc f3 pt0 pt5-m pt5-l">About</h4>
       <div className="flex-m flex-l  flex-nowrap-l space-between space-between-l space-between-m flex-wrap-m">
         <button
           className="relative button-avatar column flex center-m w7 mw-100"

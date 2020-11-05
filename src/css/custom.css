@@ -1,9 +1,5 @@
 /* General */
 
-body {
-  font-family: "Nunito", sans-serif;
-}
-
 /* Header */
 .logo {
   font-family: "Rock Salt", cursive;
@@ -85,7 +81,6 @@ body {
 input[type="email"]::placeholder,
 input[type="text"]::placeholder,
 textarea::placeholder {
-  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   padding-bottom: 2rem;
   color: grey;
@@ -119,7 +114,6 @@ textarea {
 
 input[type="email"]::placeholder,
 input[type="text"]::placeholder {
-  font-family: "Nunito", sans-serif;
   font-size: 1rem;
   padding-bottom: 1rem;
 }

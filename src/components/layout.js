@@ -61,7 +61,7 @@ setConfig({
 })
 
 export default function Layout({ children }) {
-  const { title, description, author, favicon } = useSiteMetadata()
+  const { title, description, author } = useSiteMetadata()
   return (
     <>
       <Helmet>
@@ -74,7 +74,6 @@ export default function Layout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
-        <link rel="shortcut icon" href={"/" + favicon} type="image/png" />
         <link rel="alternative icon" href="/favicon.ico" type="image/png" />
       </Helmet>
 

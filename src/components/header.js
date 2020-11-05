@@ -9,7 +9,7 @@ import "../css/custom.css"
 const Header = ({ theme }) => (
   <header className="w-100 fixed left-0 top-0 z-999 garamond bg-green">
     <div className="relative pr3 pl3 mw7 center no-underline justify-between align-items  flex  items-center">
-      <Link to="/#top" className="link">
+      <Link to="/#home" className="link">
         <h3 className="logo">{useSiteMetadata().headerTitle}</h3>
       </Link>
       <Navmenu />
