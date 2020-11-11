@@ -54,7 +54,7 @@ export default function () {
         })}
         <a
           className="link blog-a ml2 outline-0 ul"
-          href="htpp://myexternalurl.com"
+          href="gatsby-blog-mdxx.netlify.app"
           target="_blank"
           rel="noreferrer"
         >
