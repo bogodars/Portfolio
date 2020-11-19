@@ -62,13 +62,10 @@ module.exports = {
   /* Plugins */
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Rock Salt`,
-          },
-        ],
+        fonts: [`Rock Salt`],
+        display: "swap",
       },
     },
     {
