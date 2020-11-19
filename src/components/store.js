@@ -89,4 +89,14 @@ export const projectItems = [
     category: ["all", "app"],
     tag: ["React", "css", "jest", "heroku"],
   },
+  {
+    name: "User Guide",
+    title: "bet webside",
+    image: "img/bet.png",
+    exerpt: `bet webside with chat and user-guide `,
+    git: `https://github.com/bogodars/user-guide`,
+    url: `https://wonderful-haibt-7134b0.netlify.app/`,
+    category: ["all", "app"],
+    tag: ["React", "styled-components", "css", "reactour"],
+  },
 ]

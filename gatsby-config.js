@@ -58,24 +58,6 @@ module.exports = {
     /* Path to favicon and logo (located inside the 'static' folder) */
     favicon: `favicon.png`,
     logo: `/images/logo.png`,
-
-    /* Logo and text to show in footer */
-    footer: {
-      logo: `/images/footer-logo.png`,
-      text: `This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.`,
-    },
-
-    /* Address and contact info to show in footer */
-    address: {
-      line1: `1600 Amphitheatre Parkway`,
-      line2: `Mountain View, CA`,
-      line3: `94043 US`,
-    },
-    contacts: [
-      { text: `647.343.8234`, url: `tel:6473438234` },
-      { text: `123.456.7890`, url: `tel:1234567890` },
-      { text: `someone@woosite.com`, url: `mailto:someone@woo.com` },
-    ],
   },
   /* Plugins */
   plugins: [
