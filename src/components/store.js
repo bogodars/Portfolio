@@ -96,7 +96,7 @@ export const projectItems = [
     exerpt: `bet webside with chat and user-guide `,
     git: `https://github.com/bogodars/user-guide`,
     url: `https://wonderful-haibt-7134b0.netlify.app/`,
-    category: ["all", "app"],
+    category: ["all", "web"],
     tag: ["React", "styled-components", "css", "reactour"],
   },
 ]
