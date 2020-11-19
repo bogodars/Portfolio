@@ -99,4 +99,14 @@ export const projectItems = [
     category: ["all", "web"],
     tag: ["React", "styled-components", "css", "reactour"],
   },
+  {
+    name: "Blob Animations",
+    title: "Blob Animations",
+    image: "img/miro.png",
+    exerpt: `Cool animation website `,
+    git: `https://github.com/bogodars/Blob-animations`,
+    url: `https://bogodars.github.io/Blob-animations/`,
+    category: ["all", "web"],
+    tag: ["html", "keyframes", "css"],
+  },
 ]

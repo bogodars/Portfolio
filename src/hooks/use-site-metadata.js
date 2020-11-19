@@ -23,19 +23,6 @@ export const useSiteMetadata = () => {
               url
               fa
             }
-            footer {
-              text
-              logo
-            }
-            address {
-              line1
-              line2
-              line3
-            }
-            contacts {
-              text
-              url
-            }
           }
         }
       }
