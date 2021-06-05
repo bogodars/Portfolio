@@ -73,7 +73,7 @@ export default function About() {
             service. I like cooperate with people and some times days with lack
             of time and pressure because of deadlines.
           </p>
-          <p>I like good stories. So let's create next one togather.</p>
+          <p>I like good stories. So let's create next one together.</p>
           <div>
             <h3>Working with</h3>
 
