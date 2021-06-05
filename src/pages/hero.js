@@ -30,7 +30,7 @@ const Hero = () => {
             <h1 className="f1 mt0 b mb0">I create for the web.</h1>
             <p className="f3-m f4  mb5-m mb5-l mb0-m mt0 mb3">
               <br />
-              Let's make great things togather!
+              Let's make great things together!
             </p>
             <a
               className="f5 link dim  mb3 dib white bg-green pa3"
