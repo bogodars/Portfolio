@@ -69,7 +69,7 @@ export default function About() {
           </p>{" "}
           <p>
             I like understanding processes and improving them. I like good
-            managment and be part of the team. I like provide and recieve good
+            managment and be part of the team. I like provide and receive good
             service. I like cooperate with people and some times days with lack
             of time and pressure because of deadlines.
           </p>
