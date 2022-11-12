@@ -46,9 +46,9 @@ export default function About() {
 
         <div className="about__text dib gray lh-copy text-about  space-between mw7  ml4 f5 lh-title mt0 center-m">
           <p>
-            Hi, I’m Bogodar. Currently I live in Kyiv, Ukraine. I have more then
+            Hi, I’m Bogodar. Currently I live in Kyiv, Ukraine. I have more than
             7 years recruiting/hr background in different it companies. Last two
-            years i'm learing and creating for the web and i like it.
+            years i'm learning and creating for the web and i like it.
           </p>
           <p>
             Creating new things, looking for help and share own solutions is
