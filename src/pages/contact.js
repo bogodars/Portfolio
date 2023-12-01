@@ -36,10 +36,12 @@ function contact() {
                 name="email-form"
                 id="email"
                 className="email__input  "
+                requiredf
               />
             </label>
             <label className="label__subject">
               <input
+              required
                 placeholder="Subject"
                 type="text"
                 name="subject-form"
@@ -49,6 +51,7 @@ function contact() {
             </label>
             <label>
               <textarea
+              required
                 placeholder="Message"
                 name="message"
                 id="message"
