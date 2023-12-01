@@ -52,7 +52,7 @@ export default function About() {
           </p>
           <p>
             Creating new things, looking for help and share own solutions is
-            pricless. I'm intersting in design. From
+            priceless. I'm intersting in design. From
             <a
               className="link none  pl2 pr2"
               href="https://uxdesign.cc/intro-to-ux-the-norman-door-61f8120b6086 "
@@ -70,7 +70,7 @@ export default function About() {
           <p>
             I like understanding processes and improving them. I like good
             managment and be part of the team. I like provide and receive good
-            service. I like cooperate with people and some times days with lack
+            service. I like cooperate with people. I'm also ready occasionally for days with lack
             of time and pressure because of deadlines.
           </p>
           <p>I like good stories. So let's create next one together.</p>
