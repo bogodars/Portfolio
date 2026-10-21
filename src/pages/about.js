@@ -21,28 +21,42 @@ export default function About() {
       {" "}
       <h4 className="tc f3 pt0 pt5-m pt5-l">About</h4>
       <div className="flex-m flex-l  flex-nowrap-l space-between space-between-l space-between-m flex-wrap-m">
-        <button
-          className="relative button-avatar column flex center-m w7 mw-100"
-          onClick={toggleClass}
-        >
-          {" "}
-          <Tilt className="Tilt z-2">
-            <div className="Tilt-inner ">
-              <img
-                className="img-avatar db mw-100 center-m center-l  br-100"
-                src="img/profile.jpg"
-                alt="avatar"
-              />
-            </div>
-          </Tilt>
-          <a
-            href="Bogodar_Shmyglyk_cv.pdf"
-            target="_blank"
-            className={`app h3 w3 ${isActive ? "" : "danger"}`}
-          >
-            <CvIcon className="w3 h3" />
-          </a>
-        </button>
+ 
+
+<div className="relative column flex center-m w7 mw-100 items-center">
+  {/* Кнопка-аватар (тепер це окремий клікабельний елемент) */}
+  <button
+    className="relative button-avatar db p0 border-none bg-transparent pointer z-2"
+    onClick={toggleClass}
+    style={{ border: 'none', background: 'transparent', padding: 0 }}
+    aria-label="Toggle CV download"
+  >
+    <Tilt className="Tilt">
+      <div className="Tilt-inner">
+        <img
+          className="img-avatar db mw-100 center-m center-l br-100"
+          src="img/profile.jpg"
+          alt="avatar"
+        />
+      </div>
+    </Tilt>
+  </button>
+
+  {/* Посилання на резюме (винесено з кнопки, тепер воно окремо і клікабельне) */}
+  <a
+    href="Bogodar_Shmyglyk_cv.pdf"
+    target="_blank"
+    rel="noreferrer"
+    className={`cv-slide-link absolute h3 w3 flex items-center justify-center ${
+      isActive ? "cv-hidden" : "cv-visible"
+    }`}
+  >
+    <CvIcon className="w3 h3 grow pointer" />
+  </a>
+</div>
+
+
+            
 
         <div className="about__text dib gray lh-copy text-about  space-between mw7  ml4 f5 lh-title mt0 center-m">
           <p>
@@ -69,14 +83,26 @@ export default function About() {
                 className="brown mr3 grow pointer"
                 title="Ping-pong"
               />
-              <FaBookReader
-                className="green mr3 grow pointer"
-                title="Reading"
+
+              {/* Тег <a> повністю огортає іконку Goodreads і містить правильний href */}
+              <a
+                href="https://www.goodreads.com/user/show/78275917-bogodar-shmyglyk"
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.goodreads.com/user/show/78275917-bogodar-shmyglyk"
-              />
-              <FaGlobe className="gold grow pointer" title="Traveling" />
+                title="Goodreads"
+              >
+                <FaBookReader className="green mr3 grow pointer" />
+              </a>
+
+              {/* ДОДАНО: Тег <a> тепер огортає іконку глобуса.  */}
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer"
+                title="Traveling"
+              >
+                <FaGlobe className="gold grow pointer" />
+              </a>
             </div>
           </div>
         </div>
