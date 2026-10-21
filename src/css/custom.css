@@ -75,6 +75,47 @@
 }
 
 /* About section*/
+/* 1. Контейнер, який об'єднує аватар та іконку резюме */
+.items-center.relative {
+  position: relative !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. Початковий стан іконки резюме (вона ідеально по центру ЗА аватаром) */
+.cv-slide-link {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  /* Центруємо іконку точно посередині кола */
+  transform: translate(-50%, -50%) scale(0.8); 
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+  z-index: 1; /* Нижче, ніж кнопка-аватар (яка має z-2) */
+  opacity: 0;
+  pointer-events: none; /* Забороняємо кліки, поки іконка захована */
+}
+
+/* 3. Стан, коли іконка красиво виїжджає вправо при натисканні на аватар */
+.cv-slide-link.cv-visible {
+  /* Зсув по осі X вправо. 
+     Оскільки аватар великий (~300px), зсув має бути близько 180px-200px, 
+     щоб іконка повністю вийшла за межі помаранчевого кола */
+  transform: translate(190px, -50%) scale(1); 
+  opacity: 1;
+  pointer-events: auto; /* Робимо посилання клікабельним */
+}
+
+/* 4. Забезпечуємо, щоб кнопка-аватар була вище і перекривала заховану іконку */
+.button-avatar {
+  position: relative !important;
+  z-index: 2 !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
 
 /* Contact */
 
