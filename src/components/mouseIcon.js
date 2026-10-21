@@ -6,8 +6,9 @@ const MouseIcon = ({ onClick }) => (
   <ScrollLink>
     <a
       href="#about"
-      onClick={() => {
-        scrollTo("#about")
+      onClick={(e) => {
+        e.preventDefault(); // Запобігає стрибку дефолтного хендлера браузера перед скролом
+        scrollTo("#about");
       }}
     >
       <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
@@ -24,6 +25,7 @@ const MouseContainer = styled.svg`
   max-width: 2.5rem;
   width: 100%;
   height: auto;
+  display: block; /* Прибирає дефолтні інлайн-відступи знизу під SVG */
 `
 
 const ScrollLink = styled.span`
@@ -32,6 +34,18 @@ const ScrollLink = styled.span`
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+
+  /* Фікс стрибаючого зеленого обідка браузера для посилання */
+  & a {
+    display: inline-block;
+    outline: none !important; /* Повністю вимикає дефолтний прямокутний контур */
+    outline-offset: 0 !important;
+  }
+
+  /* Додає акуратне легке свічення навколо самої мишки при табах клавіатурою для збереження Accessibility (доступності) */
+  & a:focus-visible \${MouseContainer} {
+    filter: drop-shadow(0 0 4px rgba(25, 169, 116, 0.6));
+  }
 
   @media only screen and (max-width: 960px) {
     display: none;
@@ -55,7 +69,7 @@ const ScrollAnimation = keyframes`
 `
 
 const Mouse = styled.rect.attrs(props => ({
-  stroke: "green",
+  stroke: "#19a974", // Замінено на ваш точний зелений колір Tachyons для синхронізації
   strokeWidth: "3",
 }))``
 
@@ -66,7 +80,7 @@ const Scroll = styled.circle`
   animation-iteration-count: infinite;
   transform-origin: 50% 20.5px;
   will-change: transform;
-  fill: green;
+  fill: #19a974; /* Замінено на ваш точний зелений колір Tachyons */
 `
 
 export default MouseIcon
