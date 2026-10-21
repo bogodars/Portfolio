@@ -46,34 +46,9 @@ export default function About() {
 
         <div className="about__text dib gray lh-copy text-about  space-between mw7  ml4 f5 lh-title mt0 center-m">
           <p>
-            Hi, I’m Bogodar. Currently I live in Kyiv, Ukraine. I have more than
-            7 years recruiting/hr background in different it companies. Last two
-            years i'm learning and creating for the web and i like it.
-          </p>
-          <p>
-            Creating new things, looking for help and share own solutions is
-            priceless. I'm intersting in design. From
-            <a
-              className="link none  pl2 pr2"
-              href="https://uxdesign.cc/intro-to-ux-the-norman-door-61f8120b6086 "
-              title="Read about Don Norman's door"
-              target="_blank"
-              rel="noreferrer"
-            >
-              doors{" "}
-              <span role="img" aria-label="door">
-                🚪
-              </span>
-            </a>
-            to computers.
-          </p>{" "}
-          <p>
-            I like understanding processes and improving them. I like good
-            managment and be part of the team. I like provide and receive good
-            service. I like cooperate with people. I'm also ready occasionally for days with lack
-            of time and pressure because of deadlines.
-          </p>
-          <p>I like good stories. So let's create next one together.</p>
+            Hi, I’m Bogodar. Based in Plovdiv, Bulgaria (originally from Kyiv, Ukraine), I bring a unique professional background combining 7+ years of IT recruitment and HR expertise with over 4 years of hands-on experience in web development and marketing automation.</p>
+<p>Specializing in the Salesforce ecosystem, I have a proven track record of configuring Salesforce Marketing Cloud and Marketing Cloud Account Engagement (Pardot), designing responsive email frameworks, and developing dynamic web solutions.</p>
+<p>I am highly client-oriented and deeply passionate about delivering exceptional service, translating business requirements into technical solutions, and enabling clients to achieve their business goals.</p>
           <div>
             <h3>Working with</h3>
 
