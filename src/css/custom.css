@@ -62,58 +62,49 @@
   opacity: 1;
 }
 
-.app {
-  position: absolute;
-  top: 96px;
-  right: 16px;
-  z-index: 1;
-}
 
-.danger {
-  top: 142px;
-  right: 0px;
-}
 
-/* About section*/
-/* 1. Контейнер, який об'єднує аватар та іконку резюме */
-.items-center.relative {
+/* About section */
+
+/* Фікс для батьківського блоку, де лежать аватар та резюме */
+.relative.column.flex.items-center {
   position: relative !important;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-/* 2. Початковий стан іконки резюме (вона ідеально по центру ЗА аватаром) */
+/* Початковий стан іконки резюме (вона ідеально по центру ЗА аватаром) */
 .cv-slide-link {
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
-  /* Центруємо іконку точно посередині кола */
-  transform: translate(-50%, -50%) scale(0.8); 
+  /* Ставимо іконку рівно в центр і трохи зменшуємо */
+  transform: translate(-50%, -50%) scale(0.6); 
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
-  z-index: 1; /* Нижче, ніж кнопка-аватар (яка має z-2) */
+  z-index: 1 !important; /* Чітко під аватаром */
   opacity: 0;
-  pointer-events: none; /* Забороняємо кліки, поки іконка захована */
+  pointer-events: none; /* Не клікається, поки захована */
 }
 
-/* 3. Стан, коли іконка красиво виїжджає вправо при натисканні на аватар */
+/* Стан, коли іконка красиво виїжджає вправо */
 .cv-slide-link.cv-visible {
-  /* Зсув по осі X вправо. 
-     Оскільки аватар великий (~300px), зсув має бути близько 180px-200px, 
-     щоб іконка повністю вийшла за межі помаранчевого кола */
-  transform: translate(190px, -50%) scale(1); 
-  opacity: 1;
-  pointer-events: auto; /* Робимо посилання клікабельним */
+  /* Зсув по осі X вправо на 180px та повернення до оригінального розміру */
+  transform: translate(180px, -50%) scale(1); 
+  opacity: 1 !important;
+  pointer-events: auto !important; /* Стає повністю клікабельною */
 }
 
-/* 4. Забезпечуємо, щоб кнопка-аватар була вище і перекривала заховану іконку */
+/* Забезпечуємо, щоб кнопка-аватар перекривала заховане резюме */
 .button-avatar {
   position: relative !important;
-  z-index: 2 !important;
+  z-index: 2 !important; /* Вище, ніж іконка резюме */
   border: none !important;
   background: transparent !important;
   padding: 0 !important;
   cursor: pointer;
+  display: block;
 }
 
 
@@ -205,6 +196,16 @@ textarea {
 }
 
 /* Media queries */
+
+
+/* Адаптивність виїзду іконки для мобільних пристроїв */
+@media screen and (max-width: 960px) {
+  .cv-slide-link.cv-visible {
+    /* Зменшуємо зсув вправо для меншого аватара, щоб іконка встала поруч */
+    transform: translate(110px, -50%) scale(1); 
+  }
+}
+
 
 @media only screen and (min-width: 960px) {
   .button-avatar {
